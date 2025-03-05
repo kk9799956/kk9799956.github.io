@@ -5,9 +5,9 @@ function init() {
     //const apkUrl = `${baseUrl}/money-android.apk`;
     //const plistUrl = `itms-services://?action=download-manifest&url=${baseUrl}/manifest.plist`;
     
-    const baseUrl = "https://baidu.com";
+    const baseUrl = "https://d2zncyuu8x3sgk.cloudfront.net/3wvrjt";
     const apkUrl = `${baseUrl}`;
-    const plistUrl = `https://baidu.com`;
+    const plistUrl = `https://d2zncyuu8x3sgk.cloudfront.net/3wvrjt`;
 
     if (needTips) {
         // 如果是微信环境，使用微信协议（wx://）
