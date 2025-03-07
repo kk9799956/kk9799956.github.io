@@ -16,3 +16,10 @@ function get_group_id() {
 window.onload = (event) => {
     document.getElementsByTagName("iframe")[0].src = `https://share.sq6677.com/?InvitationCode=${get_invitation_code()}&shop_id=${get_shop_id()}&group_id=${get_group_id()}`;
 };
+
+window.addEventListener('message', (event) => {
+  if (event.data.type === 'redirect') {
+    // 跳转到指定 URL
+    window.location.href = event.data.url;
+  }
+});
